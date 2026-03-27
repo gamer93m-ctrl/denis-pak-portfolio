@@ -1,38 +1,4 @@
 <!DOCTYPE html>
-<!--
-  ==========================================
-  DENIS PAK PORTFOLIO — HOW TO EDIT
-  ==========================================
-
-  TO CHANGE COLORS OR FONTS:
-    Open css/tokens.css
-    Edit the values under "COLORS" or "TYPOGRAPHY"
-    Save → refresh browser — changes apply site-wide
-
-  TO CHANGE TEXT:
-    Edit the text directly in this file
-    Look for <!-- EDIT --> comments next to editable content
-
-  TO REPLACE AN IMAGE PLACEHOLDER WITH A REAL IMAGE:
-    1. Put your image file in the images/ folder
-    2. Delete the <div class="img-placeholder ..."> block
-    3. Replace with: <img src="images/your-file.jpg" alt="Description" class="case-img">
-
-  TO ADD A NEW PROJECT CARD:
-    Copy one of the <a class="project-card"> blocks below
-    Paste it inside <div class="project-grid">
-    Update the text, tags, metrics, and href link
-
-  TO ADD A NEW CASE STUDY PAGE:
-    1. Copy cases/mvpplatinum.html
-    2. Rename to cases/yourproject.html
-    3. Edit all text content
-    4. Update the card's href in this file to point to the new page
-
-  NAV NOTE: The navigation is duplicated in each HTML file.
-  If you update nav links here, also update them in all 4 files in cases/
-  ==========================================
--->
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -40,12 +6,10 @@
   <title>Denis Pak — Product Designer</title>
   <meta name="description" content="Product Designer specialising in B2C, B2B and e-commerce digital products. Portfolio of Denis Pak.">
 
-  <!-- Google Fonts — change 'Inter' in tokens.css if you switch fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Styles — load tokens first, everything else references it -->
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
@@ -53,50 +17,49 @@
 </head>
 <body>
 
-  <!-- ==================== NAVIGATION ==================== -->
-  <!-- NAV NOTE: also update in cases/mvpplatinum.html, tsumstat.html, travelassistant.html, sample.html -->
+  <!-- NAVIGATION — if you update links here, also update them in all 4 cases/ files -->
   <header class="site-nav">
     <div class="container">
       <div class="site-nav__inner">
-        <a href="index.html" class="site-nav__logo">Denis Pak</a><!-- EDIT: your name/brand -->
+        <a href="index.html" class="site-nav__logo">Denis Pak</a>
         <nav class="site-nav__links">
           <a href="#portfolio" class="site-nav__link">Portfolio</a>
-          <a href="https://drive.google.com" class="site-nav__link" target="_blank" rel="noopener"><!-- EDIT: replace with your Google Drive resume link -->Resume</a>
-          <a href="https://t.me/denispak" class="site-nav__link site-nav__link--cta" target="_blank" rel="noopener"><!-- EDIT: replace with your Telegram handle -->Contact</a>
+          <a href="https://drive.google.com" class="site-nav__link" target="_blank" rel="noopener">Resume</a>
+          <a href="https://t.me/denispak" class="site-nav__link site-nav__link--cta" target="_blank" rel="noopener">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
-  <!-- ==================== HERO ==================== -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <p class="section-label">Product Designer</p><!-- EDIT: your title -->
-      <h1 class="hero__name">Denis Pak</h1><!-- EDIT: your name -->
+      <p class="section-label">Product Designer</p>
+      <h1 class="hero__name">Denis Pak</h1>
       <p class="hero__tagline">
         I design digital products for B2C, B2B, and E-commerce —
         focused on conversion, clarity, and measurable results.
-      </p><!-- EDIT: your tagline -->
+      </p>
       <div class="hero__chips">
         <span class="hero__chip">B2C</span>
         <span class="hero__chip">B2B</span>
         <span class="hero__chip">E-commerce</span>
         <span class="hero__chip">Mobile</span>
         <span class="hero__chip">Product Design</span>
-      </div><!-- EDIT: your specializations -->
+      </div>
     </div>
   </section>
 
-  <!-- ==================== PROJECT GRID ==================== -->
+  <!-- PROJECT GRID -->
   <section class="section" id="portfolio">
     <div class="container">
-      <h2 class="section-title">Selected Work</h2><!-- EDIT: section heading -->
+      <h2 class="section-title">Selected Work</h2>
 
       <div class="project-grid">
 
-        <!-- ---- CARD 1: VIP-PLATINUM ---- -->
+        <!-- CARD 1: VIP-PLATINUM -->
         <a href="cases/mvpplatinum.html" class="project-card">
-          <!-- REPLACE: delete this div, add <img src="images/vip-platinum-cover.jpg" alt="VIP-Platinum" class="case-img"> -->
+          <!-- REPLACE with: <img src="images/vip-platinum-cover.jpg" alt="VIP-Platinum" class="case-img"> -->
           <div class="img-placeholder img-placeholder--card">
             <span>Project cover image</span>
           </div>
@@ -105,10 +68,10 @@
               <span class="tag tag--b2c">B2C</span>
               <span class="tag tag--ecommerce">E-commerce</span>
             </div>
-            <h3 class="project-card__title">VIP-Platinum</h3><!-- EDIT -->
+            <h3 class="project-card__title">VIP-Platinum</h3>
             <p class="project-card__description">
               Loyalty program and checkout redesign for a luxury boutique. Improved conversion and reduced cart abandonment.
-            </p><!-- EDIT -->
+            </p>
             <div class="project-card__metrics">
               <div class="metric">
                 <span class="metric__value">+37%</span>
@@ -126,13 +89,13 @@
                 <span class="metric__value">70%</span>
                 <span class="metric__label">Chat→Checkout</span>
               </div>
-            </div><!-- EDIT: update metrics -->
+            </div>
           </div>
         </a>
 
-        <!-- ---- CARD 2: ЦУМ STAT ---- -->
+        <!-- CARD 2: ЦУМ STAT -->
         <a href="cases/tsumstat.html" class="project-card">
-          <!-- REPLACE: delete this div, add <img src="images/tsumstat-cover.jpg" alt="ЦУМ STAT" class="case-img"> -->
+          <!-- REPLACE with: <img src="images/tsumstat-cover.jpg" alt="ЦУМ STAT" class="case-img"> -->
           <div class="img-placeholder img-placeholder--card">
             <span>Project cover image</span>
           </div>
@@ -141,10 +104,10 @@
               <span class="tag tag--b2b">B2B</span>
               <span class="tag tag--analytics">Analytics</span>
             </div>
-            <h3 class="project-card__title">ЦУМ STAT</h3><!-- EDIT -->
+            <h3 class="project-card__title">ЦУМ STAT</h3>
             <p class="project-card__description">
               Mobile analytics dashboard for boutique managers. Complex data made scannable on phone.
-            </p><!-- EDIT -->
+            </p>
             <div class="project-card__metrics">
               <div class="metric">
                 <span class="metric__value">B2B</span>
@@ -156,15 +119,15 @@
               </div>
               <div class="metric">
                 <span class="metric__value">✓</span>
-                <span class="metric__label">Stakeholder approved</span>
+                <span class="metric__label">Approved</span>
               </div>
-            </div><!-- EDIT: update with real metrics if available -->
+            </div>
           </div>
         </a>
 
-        <!-- ---- CARD 3: TRAVEL ASSISTANT ---- -->
+        <!-- CARD 3: TRAVEL ASSISTANT -->
         <a href="cases/travelassistant.html" class="project-card">
-          <!-- REPLACE: delete this div, add <img src="images/travel-cover.jpg" alt="Travel Assistant" class="case-img"> -->
+          <!-- REPLACE with: <img src="images/travel-cover.jpg" alt="Travel Assistant" class="case-img"> -->
           <div class="img-placeholder img-placeholder--card">
             <span>Project cover image</span>
           </div>
@@ -173,10 +136,10 @@
               <span class="tag tag--b2c">B2C</span>
               <span class="tag tag--ecommerce">E-commerce</span>
             </div>
-            <h3 class="project-card__title">Travel Assistant</h3><!-- EDIT -->
+            <h3 class="project-card__title">Travel Assistant</h3>
             <p class="project-card__description">
               All-in-one travel app for flights, hotels, and events. Launched with strong user retention from day one.
-            </p><!-- EDIT -->
+            </p>
             <div class="project-card__metrics">
               <div class="metric">
                 <span class="metric__value">1 000+</span>
@@ -194,13 +157,13 @@
                 <span class="metric__value">4.2★</span>
                 <span class="metric__label">App rating</span>
               </div>
-            </div><!-- EDIT: update metrics -->
+            </div>
           </div>
         </a>
 
-        <!-- ---- CARD 4: SAMPLE MERCH ---- -->
+        <!-- CARD 4: SAMPLE MERCH -->
         <a href="cases/sample.html" class="project-card">
-          <!-- REPLACE: delete this div, add <img src="images/sample-cover.jpg" alt="Sample Merch" class="case-img"> -->
+          <!-- REPLACE with: <img src="images/sample-cover.jpg" alt="Sample Merch" class="case-img"> -->
           <div class="img-placeholder img-placeholder--card">
             <span>Project cover image</span>
           </div>
@@ -210,39 +173,39 @@
               <span class="tag tag--b2c">B2C</span>
               <span class="tag tag--ecommerce">E-commerce</span>
             </div>
-            <h3 class="project-card__title">Sample Merch</h3><!-- EDIT -->
+            <h3 class="project-card__title">Sample Merch</h3>
             <p class="project-card__description">
               Clothing and merchandise production platform. Streamlined checkout and production tracking.
-            </p><!-- EDIT -->
+            </p>
             <div class="project-card__metrics">
               <div class="metric">
                 <span class="metric__value">B2B+B2C</span>
                 <span class="metric__label">Segment</span>
               </div>
               <div class="metric">
-                <span class="metric__value">↓</span>
-                <span class="metric__label">Reduced abandonment</span>
+                <span class="metric__value">3 steps</span>
+                <span class="metric__label">Checkout (was 7)</span>
               </div>
               <div class="metric">
                 <span class="metric__value">✓</span>
-                <span class="metric__label">Stakeholder approved</span>
+                <span class="metric__label">Approved</span>
               </div>
-            </div><!-- EDIT: update with real metrics if available -->
+            </div>
           </div>
         </a>
 
-      </div><!-- /project-grid -->
+      </div>
     </div>
   </section>
 
-  <!-- ==================== FOOTER ==================== -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="site-footer__inner">
-        <span class="site-footer__name">Denis Pak</span><!-- EDIT -->
+        <span class="site-footer__name">Denis Pak</span>
         <div class="site-footer__links">
-          <a href="https://drive.google.com" class="site-footer__link" target="_blank" rel="noopener">Resume</a><!-- EDIT: your resume link -->
-          <a href="https://t.me/denispak" class="site-footer__link" target="_blank" rel="noopener">Telegram</a><!-- EDIT: your Telegram -->
+          <a href="https://drive.google.com" class="site-footer__link" target="_blank" rel="noopener">Resume</a>
+          <a href="https://t.me/denispak" class="site-footer__link" target="_blank" rel="noopener">Telegram</a>
         </div>
       </div>
     </div>
