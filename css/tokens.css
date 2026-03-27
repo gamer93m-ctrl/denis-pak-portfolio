@@ -1,42 +1,39 @@
 /* ============================================================
    DENIS PAK PORTFOLIO — DESIGN TOKENS
    ============================================================
-   Edit this file to change colors, fonts, and spacing globally.
+   Edit this file to restyle the entire site.
    ============================================================ */
 
 :root {
 
   /* --- COLORS --- */
-  --color-bg:             #0A0A0A;   /* main dark background */
-  --color-bg-elevated:    #141414;   /* slightly lighter — card/section bg */
-  --color-bg-subtle:      #1A1A1A;   /* borders, dividers, hover bg */
-  --color-surface:        #1E1E1E;   /* card surface */
-  --color-border:         #2A2A2A;   /* subtle borders */
-  --color-border-hover:   #444444;   /* border on hover */
+  --color-bg:             #000000;
+  --color-bg-elevated:    #161616;
+  --color-bg-subtle:      #1C1C1C;
+  --color-surface:        #1A1A1A;
+  --color-border:         rgba(255, 255, 255, 0.06);
 
-  --color-text:           #FFFFFF;   /* primary text */
-  --color-text-secondary: #A0A0A0;   /* body text, descriptions */
-  --color-text-muted:     #666666;   /* captions, labels */
+  --color-text:           #FFFFFF;
+  --color-text-secondary: rgba(255, 255, 255, 0.6);
+  --color-text-muted:     rgba(255, 255, 255, 0.3);
 
-  --color-accent:         #22C55E;   /* green accent — links, highlights, metric values */
-  --color-accent-dim:     rgba(34, 197, 94, 0.15); /* subtle green bg for pills */
-  --color-accent-hover:   #16A34A;   /* darker green on hover */
+  --color-accent:         #22C55E;
+  --color-accent-soft:    rgba(34, 197, 94, 0.12);
 
   /* --- TAG COLORS --- */
-  --tag-b2c-bg:           rgba(99, 102, 241, 0.12);
-  --tag-b2c-text:         #818CF8;
-  --tag-b2b-bg:           rgba(34, 197, 94, 0.12);
-  --tag-b2b-text:         #4ADE80;
-  --tag-ecommerce-bg:     rgba(251, 146, 60, 0.12);
-  --tag-ecommerce-text:   #FB923C;
-  --tag-analytics-bg:     rgba(56, 189, 248, 0.12);
-  --tag-analytics-text:   #38BDF8;
+  --tag-b2c-bg:           rgba(129, 140, 248, 0.1);
+  --tag-b2c-text:         #A5B4FC;
+  --tag-b2b-bg:           rgba(74, 222, 128, 0.1);
+  --tag-b2b-text:         #86EFAC;
+  --tag-ecommerce-bg:     rgba(251, 146, 60, 0.1);
+  --tag-ecommerce-text:   #FDBA74;
+  --tag-analytics-bg:     rgba(56, 189, 248, 0.1);
+  --tag-analytics-text:   #7DD3FC;
 
   /* --- TYPOGRAPHY --- */
   --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  /* --- TYPE SCALE --- */
   --text-xs:   0.75rem;
   --text-sm:   0.875rem;
   --text-base: 1rem;
@@ -46,7 +43,6 @@
   --text-3xl:  2rem;
   --text-4xl:  2.75rem;
   --text-5xl:  3.75rem;
-  --text-6xl:  5rem;
 
   --font-weight-regular:  400;
   --font-weight-medium:   500;
@@ -59,10 +55,9 @@
   --line-height-relaxed: 1.75;
 
   --letter-spacing-tight:  -0.03em;
-  --letter-spacing-normal: -0.01em;
-  --letter-spacing-wide:    0.06em;
+  --letter-spacing-wide:    0.08em;
 
-  /* --- SPACING (8px grid) --- */
+  /* --- SPACING --- */
   --space-1:  0.5rem;
   --space-2:  1rem;
   --space-3:  1.5rem;
@@ -82,8 +77,8 @@
   --page-padding-lg:  3rem;
 
   /* --- RADII --- */
-  --radius-sm:   6px;
-  --radius-md:  10px;
+  --radius-sm:   8px;
+  --radius-md:  12px;
   --radius-lg:  16px;
   --radius-xl:  24px;
   --radius-full: 999px;
@@ -92,5 +87,4 @@
   --ease-out:       cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast:   200ms var(--ease-out);
   --transition-normal: 350ms var(--ease-out);
-  --transition-slow:   600ms var(--ease-out);
 }
