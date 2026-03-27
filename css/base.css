@@ -1,6 +1,5 @@
 /* ============================================================
-   BASE STYLES — Reset and global defaults
-   Do not edit colors/fonts here — use tokens.css instead.
+   BASE STYLES — Reset and global defaults (dark theme)
    ============================================================ */
 
 *, *::before, *::after {
@@ -21,12 +20,13 @@ body {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-normal);
   color: var(--color-text-secondary);
-  background-color: var(--color-background);
+  background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-img {
+img, video {
   display: block;
   max-width: 100%;
   height: auto;
@@ -46,11 +46,16 @@ button {
   cursor: pointer;
   border: none;
   background: none;
+  color: inherit;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
 }
 
 /* ============================================================
    PROSE — Typography for case study flowing text
-   Apply .prose to an <article> or <div> wrapping long content.
    ============================================================ */
 
 .prose h1,
@@ -59,19 +64,19 @@ button {
   font-family: var(--font-display);
   font-weight: var(--font-weight-semibold);
   letter-spacing: var(--letter-spacing-tight);
-  color: var(--color-text-primary);
-  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  line-height: var(--line-height-snug);
 }
 
 .prose h2 {
   font-size: var(--text-2xl);
-  margin-top: var(--space-10);
+  margin-top: var(--space-12);
   margin-bottom: var(--space-3);
 }
 
 .prose h3 {
   font-size: var(--text-xl);
-  margin-top: var(--space-6);
+  margin-top: var(--space-8);
   margin-bottom: var(--space-2);
 }
 
@@ -98,7 +103,11 @@ button {
   color: var(--color-text-secondary);
 }
 
-/* Real image inside prose (after replacing a placeholder) */
+.prose ul li::marker {
+  color: var(--color-accent);
+}
+
+/* Real images inside prose */
 .case-img {
   display: block;
   width: 100%;

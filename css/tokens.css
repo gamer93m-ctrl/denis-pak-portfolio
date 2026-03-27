@@ -1,101 +1,96 @@
 /* ============================================================
    DENIS PAK PORTFOLIO — DESIGN TOKENS
    ============================================================
-   This is the ONLY file you need to edit to restyle the site.
-   Change colors, fonts, and spacing here — it updates everywhere.
+   Edit this file to change colors, fonts, and spacing globally.
    ============================================================ */
 
 :root {
 
-  /* --- COLORS ---
-     Background:  page background
-     Surface:     card backgrounds
-     Border:      lines and dividers
-     Text*:       text hierarchy (primary = headings, secondary = body, muted = captions)
-     Accent:      hover states
-  */
-  --color-background:     #F9F8F6;   /* warm off-white */
-  --color-surface:        #FFFFFF;   /* card background */
-  --color-border:         #E8E6E1;   /* subtle dividers */
-  --color-text-primary:   #0F0F0F;   /* headings, name, card titles */
-  --color-text-secondary: #3D3D3D;   /* body paragraphs, descriptions */
-  --color-text-muted:     #8A8780;   /* tags, captions, metadata */
-  --color-accent:         #1A1A1A;   /* hover underlines, active states */
+  /* --- COLORS --- */
+  --color-bg:             #0A0A0A;   /* main dark background */
+  --color-bg-elevated:    #141414;   /* slightly lighter — card/section bg */
+  --color-bg-subtle:      #1A1A1A;   /* borders, dividers, hover bg */
+  --color-surface:        #1E1E1E;   /* card surface */
+  --color-border:         #2A2A2A;   /* subtle borders */
+  --color-border-hover:   #444444;   /* border on hover */
 
-  /* --- TAG COLORS ---
-     Each category tag has a background and a text color.
-     Change these to restyle the badge colors.
-  */
-  --tag-b2c-bg:           #EEF2FF;
-  --tag-b2c-text:         #3730A3;
-  --tag-b2b-bg:           #F0FDF4;
-  --tag-b2b-text:         #15803D;
-  --tag-ecommerce-bg:     #FFF7ED;
-  --tag-ecommerce-text:   #C2410C;
-  --tag-analytics-bg:     #F0F9FF;
-  --tag-analytics-text:   #0369A1;
+  --color-text:           #FFFFFF;   /* primary text */
+  --color-text-secondary: #A0A0A0;   /* body text, descriptions */
+  --color-text-muted:     #666666;   /* captions, labels */
 
-  /* --- TYPOGRAPHY ---
-     To change the font:
-     1. Go to https://fonts.google.com and pick a font
-     2. Add a <link> in the <head> of each HTML file (see existing link for Inter)
-     3. Replace 'Inter' below with your font name
-  */
+  --color-accent:         #22C55E;   /* green accent — links, highlights, metric values */
+  --color-accent-dim:     rgba(34, 197, 94, 0.15); /* subtle green bg for pills */
+  --color-accent-hover:   #16A34A;   /* darker green on hover */
+
+  /* --- TAG COLORS --- */
+  --tag-b2c-bg:           rgba(99, 102, 241, 0.12);
+  --tag-b2c-text:         #818CF8;
+  --tag-b2b-bg:           rgba(34, 197, 94, 0.12);
+  --tag-b2b-text:         #4ADE80;
+  --tag-ecommerce-bg:     rgba(251, 146, 60, 0.12);
+  --tag-ecommerce-text:   #FB923C;
+  --tag-analytics-bg:     rgba(56, 189, 248, 0.12);
+  --tag-analytics-text:   #38BDF8;
+
+  /* --- TYPOGRAPHY --- */
   --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  /* --- TYPE SCALE ---
-     Based on a consistent ratio. Edit sizes here to adjust all text globally.
-  */
-  --text-xs:   0.75rem;    /*  12px  captions, metric labels */
-  --text-sm:   0.875rem;   /*  14px  nav links, tags, metadata */
-  --text-base: 1rem;       /*  16px  body copy */
-  --text-lg:   1.125rem;   /*  18px  card titles, subheadings */
-  --text-xl:   1.25rem;    /*  20px  section labels */
-  --text-2xl:  1.5rem;     /*  24px  case study h2 headings */
-  --text-3xl:  1.875rem;   /*  30px  page section titles */
-  --text-4xl:  2.5rem;     /*  40px  hero tagline (desktop) */
-  --text-5xl:  3.5rem;     /*  56px  hero name (desktop) */
+  /* --- TYPE SCALE --- */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  2rem;
+  --text-4xl:  2.75rem;
+  --text-5xl:  3.75rem;
+  --text-6xl:  5rem;
 
   --font-weight-regular:  400;
   --font-weight-medium:   500;
   --font-weight-semibold: 600;
+  --font-weight-bold:     700;
 
-  --line-height-tight:   1.2;    /* headings */
-  --line-height-normal:  1.6;    /* body copy */
-  --line-height-relaxed: 1.75;   /* case study prose */
+  --line-height-tight:   1.1;
+  --line-height-snug:    1.3;
+  --line-height-normal:  1.6;
+  --line-height-relaxed: 1.75;
 
-  --letter-spacing-tight: -0.02em;  /* display headings */
-  --letter-spacing-wide:   0.06em;  /* all-caps labels */
+  --letter-spacing-tight:  -0.03em;
+  --letter-spacing-normal: -0.01em;
+  --letter-spacing-wide:    0.06em;
 
-  /* --- SPACING (8px grid) ---
-     --space-1 = 8px, --space-2 = 16px, --space-3 = 24px, etc.
-  */
-  --space-1:  0.5rem;    /*  8px */
-  --space-2:  1rem;      /* 16px */
-  --space-3:  1.5rem;    /* 24px */
-  --space-4:  2rem;      /* 32px */
-  --space-5:  2.5rem;    /* 40px */
-  --space-6:  3rem;      /* 48px */
-  --space-8:  4rem;      /* 64px */
-  --space-10: 5rem;      /* 80px */
-  --space-12: 6rem;      /* 96px */
-  --space-16: 8rem;      /* 128px */
+  /* --- SPACING (8px grid) --- */
+  --space-1:  0.5rem;
+  --space-2:  1rem;
+  --space-3:  1.5rem;
+  --space-4:  2rem;
+  --space-5:  2.5rem;
+  --space-6:  3rem;
+  --space-8:  4rem;
+  --space-10: 5rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+  --space-20: 10rem;
 
-  /* --- LAYOUT ---*/
-  --max-width:       1120px;   /* main content column max width */
-  --max-width-text:   720px;   /* prose column (case study body text) */
-  --page-padding:     1.5rem;  /* horizontal padding on mobile */
-  --page-padding-lg:  2.5rem;  /* horizontal padding on desktop */
+  /* --- LAYOUT --- */
+  --max-width:       1200px;
+  --max-width-text:   680px;
+  --page-padding:     1.5rem;
+  --page-padding-lg:  3rem;
 
-  /* --- BORDERS & RADII ---*/
-  --radius-sm:  4px;
-  --radius-md:  8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
+  /* --- RADII --- */
+  --radius-sm:   6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+  --radius-full: 999px;
 
-  /* --- TRANSITIONS ---*/
-  --transition-fast:   150ms ease;
-  --transition-normal: 250ms ease;
-  --transition-slow:   400ms ease;
+  /* --- TRANSITIONS --- */
+  --ease-out:       cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast:   200ms var(--ease-out);
+  --transition-normal: 350ms var(--ease-out);
+  --transition-slow:   600ms var(--ease-out);
 }

@@ -1,11 +1,5 @@
 /* ============================================================
-   LAYOUT — Container, grid, sections, responsive breakpoints
-   ============================================================ */
-
-
-/* ============================================================
-   CONTAINER
-   Centers content and applies horizontal padding.
+   LAYOUT — Container, sections, responsive breakpoints
    ============================================================ */
 
 .container {
@@ -15,50 +9,11 @@
   padding-inline: var(--page-padding);
 }
 
-
-/* ============================================================
-   SECTION SPACING
-   Consistent vertical rhythm between page sections.
-   ============================================================ */
-
 .section {
   padding-block: var(--space-12);
 }
 
-.section--sm {
-  padding-block: var(--space-6);
-}
-
-.section--lg {
-  padding-block: var(--space-16);
-}
-
-
-/* ============================================================
-   HERO SECTION
-   ============================================================ */
-
-.hero {
-  padding-top: var(--space-12);
-  padding-bottom: var(--space-10);
-}
-
-
-/* ============================================================
-   PROJECT GRID — 2×2 on desktop, 1 column on mobile
-   ============================================================ */
-
-.project-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-4);
-}
-
-
-/* ============================================================
-   CASE STUDY LAYOUT
-   ============================================================ */
-
+/* Narrow prose column for case study body */
 .case-layout {
   padding-top: 0;
 }
@@ -67,103 +22,79 @@
   max-width: calc(var(--max-width-text) + var(--page-padding) * 2);
 }
 
-/* Override for full-width elements inside narrow prose column */
-.case-layout .img-placeholder--full,
-.case-layout .img-row,
-.case-layout .metrics-grid {
-  width: 100%;
-}
-
 
 /* ============================================================
-   DIVIDER
+   RESPONSIVE
    ============================================================ */
 
-.divider {
-  border: none;
-  border-top: 1px solid var(--color-border);
-  margin-block: var(--space-8);
-}
-
-
-/* ============================================================
-   RESPONSIVE BREAKPOINTS
-   ============================================================ */
-
-/* --- TABLET: 640px and above --- */
+/* Tablet: 640px+ */
 @media (min-width: 640px) {
   .container {
     padding-inline: var(--page-padding-lg);
   }
-
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-5);
-  }
-
-  .hero__name {
-    font-size: var(--text-5xl);
-  }
 }
 
-/* --- DESKTOP: 1024px and above --- */
+/* Desktop: 1024px+ */
 @media (min-width: 1024px) {
-  .hero {
-    padding-top: var(--space-16);
-    padding-bottom: var(--space-12);
-  }
-
   .hero__name {
-    font-size: var(--text-5xl);
-  }
-
-  .hero__tagline {
-    font-size: var(--text-xl);
+    font-size: var(--text-6xl);
   }
 
   .case-header__title {
-    font-size: var(--text-4xl);
-  }
-
-  .project-grid {
-    gap: var(--space-6);
+    font-size: var(--text-5xl);
   }
 }
 
-/* --- MOBILE: max 639px --- */
+/* Mobile: max 639px */
 @media (max-width: 639px) {
+  .hero {
+    min-height: 85vh;
+  }
+
   .hero__name {
-    font-size: var(--text-3xl);
+    font-size: var(--text-4xl);
   }
 
   .hero__tagline {
     font-size: var(--text-base);
   }
 
+  .hero__video {
+    width: 90vw;
+  }
+
+  .project__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .project__visuals {
+    order: -1;
+  }
+
+  .project__title {
+    font-size: var(--text-3xl);
+  }
+
   .case-header__title {
-    font-size: var(--text-2xl);
+    font-size: var(--text-3xl);
   }
 
   .case-header__description {
     font-size: var(--text-base);
   }
 
+  .case-header__meta {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
   .section-title {
-    font-size: var(--text-xl);
+    font-size: var(--text-base);
   }
 
   .section {
     padding-block: var(--space-8);
-  }
-
-  .hero {
-    padding-top: var(--space-8);
-    padding-bottom: var(--space-8);
-  }
-
-  .case-header__meta {
-    flex-direction: column;
-    gap: var(--space-3);
   }
 
   .img-row {
@@ -189,5 +120,19 @@
 
   .metric--large .metric__value {
     font-size: var(--text-2xl);
+  }
+
+  .img-placeholder--phone {
+    width: 160px;
+    height: 320px;
+  }
+
+  .metric-pills {
+    gap: var(--space-1);
+  }
+
+  .metric-pill {
+    padding: 8px 14px;
+    font-size: var(--text-xs);
   }
 }
