@@ -10,7 +10,7 @@
 }
 
 .section {
-  padding-block: var(--space-10);
+  padding-block: var(--space-6);
 }
 
 .case-layout {
@@ -42,13 +42,16 @@
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: var(--space-8);
   }
 
-  .hero__content {
-    padding-left: var(--page-padding);
-    padding-right: var(--page-padding);
+  .hero__video-wrap {
+    order: -1;
+  }
+
+  .hero__video {
+    max-width: 260px;
   }
 
   .hero__name {
@@ -57,15 +60,6 @@
 
   .hero__tagline {
     font-size: var(--text-base);
-  }
-
-  .hero__video-wrap {
-    padding-inline: var(--page-padding);
-  }
-
-  .hero__video {
-    max-width: 280px;
-    margin-inline: auto;
   }
 
   .project__inner {
@@ -100,14 +94,7 @@
   }
 
   .site-nav__inner {
-    max-width: 100%;
-    border-radius: 0;
-    margin-inline: 0;
     padding-inline: var(--page-padding);
-  }
-
-  .site-nav {
-    padding-top: 0;
   }
 
   .site-footer__inner {
