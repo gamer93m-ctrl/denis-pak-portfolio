@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Merch — Denis Pak</title><!-- EDIT -->
+  <meta name="description" content="Case study: Sample Merch — clothing and merchandise production platform.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="site-nav">
+    <div class="container">
+      <div class="site-nav__inner">
+        <a href="../index.html" class="site-nav__logo">Denis Pak</a>
+        <nav class="site-nav__links">
+          <a href="../index.html#portfolio" class="site-nav__link">Portfolio</a>
+          <a href="https://drive.google.com" class="site-nav__link" target="_blank" rel="noopener">Resume</a><!-- EDIT -->
+          <a href="https://t.me/denispak" class="site-nav__link site-nav__link--cta" target="_blank" rel="noopener">Contact</a><!-- EDIT -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CASE HEADER ==================== -->
+  <section class="case-header">
+    <div class="container">
+      <a href="../index.html" class="back-link">← All projects</a>
+
+      <div class="case-header__tags">
+        <span class="tag tag--b2b">B2B</span>
+        <span class="tag tag--b2c">B2C</span>
+        <span class="tag tag--ecommerce">E-commerce</span>
+      </div>
+
+      <h1 class="case-header__title">Sample Merch</h1><!-- EDIT -->
+
+      <p class="case-header__description">
+        Clothing and merchandise production platform for individual orders,
+        corporate projects, and government contracts. Redesigned checkout
+        to reduce abandonment and improve transparency.
+      </p><!-- EDIT -->
+
+      <div class="case-header__meta">
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">Product Designer</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Platform</span>
+          <span class="meta-value">Web</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Segment</span>
+          <span class="meta-value">B2B · B2C · E-commerce</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Year</span>
+          <span class="meta-value">2023</span><!-- EDIT -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HERO IMAGE ==================== -->
+  <div class="container">
+    <!-- REPLACE: delete this div, add <img src="../images/sample-hero.jpg" alt="Sample Merch platform overview" class="case-img"> -->
+    <div class="img-placeholder img-placeholder--hero">
+      <span>Hero / cover image</span>
+    </div>
+  </div>
+
+  <!-- ==================== CASE STUDY BODY ==================== -->
+  <article class="case-layout section">
+    <div class="container">
+      <div class="prose">
+
+        <!-- SECTION 1: OVERVIEW -->
+        <h2>Overview</h2>
+        <p>
+          Sample Merch is a production platform where individuals, companies, and
+          government clients can order custom clothing and branded merchandise.
+          The platform handles everything from item configuration to production tracking
+          and delivery.
+        </p>
+        <p>
+          The existing checkout flow had high abandonment rates due to an unclear
+          ordering process and no visibility into production stages after purchase.
+          My goal was to simplify the flow and add transparent progress tracking.
+        </p><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Platform overview / before state</span>
+        </div>
+
+        <!-- SECTION 2: RESEARCH -->
+        <h2>Research & Methodology</h2>
+        <p>
+          I reviewed session recordings and exit surveys to identify where users were
+          dropping off. I also conducted 5 interviews with B2B clients (corporate buyers)
+          and 4 with individual customers to understand their different mental models
+          around the ordering process.
+        </p>
+        <p>Key findings:</p>
+        <ul>
+          <li>Corporate buyers needed a formal request/approval flow — not a standard cart</li>
+          <li>Individual customers abandoned when they couldn't estimate delivery time upfront</li>
+          <li>Both groups wanted clear production stage visibility after placing an order</li>
+          <li>The 24-hour manager response promise was a strong trust signal but wasn't visible enough</li>
+        </ul><!-- EDIT -->
+
+        <div class="img-row">
+          <div class="img-placeholder img-placeholder--half"><span>Drop-off funnel analysis</span></div>
+          <div class="img-placeholder img-placeholder--half"><span>User interview insights</span></div>
+        </div>
+
+        <!-- SECTION 3: DESIGN CHALLENGES -->
+        <h2>Design Challenges & Solutions</h2>
+
+        <h3>Challenge 1 — Uncluttered, logical checkout</h3>
+        <p>
+          The previous checkout had 7 steps with confusing branching logic for different order types.
+          I reorganised it into a 3-step linear flow with smart defaults for returning customers,
+          and separated the B2B corporate request path from the standard individual order flow.
+        </p><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Checkout flow — before and after</span>
+        </div>
+
+        <h3>Challenge 2 — Merchandise request system for B2B</h3>
+        <p>
+          Corporate buyers need to submit requests, get internal approval, then confirm the order.
+          I designed a dedicated B2B request flow with a shareable quote view and a clear approval
+          status screen — making the process match how procurement actually works in large organisations.
+        </p><!-- EDIT -->
+
+        <div class="img-row">
+          <div class="img-placeholder img-placeholder--half"><span>B2B request flow</span></div>
+          <div class="img-placeholder img-placeholder--half"><span>Quote / approval view</span></div>
+        </div>
+
+        <h3>Challenge 3 — Production stage tracking</h3>
+        <p>
+          After placing an order, customers had no visibility until delivery. I designed a
+          transparent production timeline with 5 clear stages and real-time status updates —
+          reducing support tickets and building trust in the production process.
+        </p><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Production tracking — order status screens</span>
+        </div>
+
+        <h3>Challenge 4 — 24-hour response promise</h3>
+        <p>
+          The platform's key differentiator was guaranteed manager response within 24 hours.
+          I made this promise prominent in the UI — visible on the product configuration screen,
+          the cart, and the order confirmation — turning a policy into a conversion driver.
+        </p><!-- EDIT -->
+
+        <!-- SECTION 4: RESULTS -->
+        <h2>Key Results</h2>
+        <p>
+          Measured after redesign launch against the 3-month pre-redesign baseline.
+        </p><!-- EDIT -->
+
+        <div class="metrics-grid">
+          <div class="metric metric--large">
+            <span class="metric__value">↓</span>
+            <span class="metric__label">Reduced cart abandonment</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">3</span>
+            <span class="metric__label">Checkout steps (was 7)</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">✓</span>
+            <span class="metric__label">Stakeholder approved</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">24h</span>
+            <span class="metric__label">Manager response SLA</span>
+          </div>
+        </div><!-- EDIT: add real numbers when available -->
+
+        <!-- SECTION 5: DELIVERABLES -->
+        <h2>Design Deliverables</h2>
+        <ul>
+          <li>Redesigned individual checkout flow (3-step linear)</li>
+          <li>B2B merchandise request and approval flow</li>
+          <li>Production stage tracking UI (5-stage timeline)</li>
+          <li>24-hour response trust indicator component</li>
+          <li>Order confirmation and status screens</li>
+          <li>Annotated handoff specs for web development</li>
+        </ul><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Final screens overview</span>
+        </div>
+
+      </div><!-- /prose -->
+    </div>
+  </article>
+
+  <!-- ==================== CASE NAV ==================== -->
+  <nav style="border-top: 1px solid var(--color-border);">
+    <div class="container" style="padding-block: var(--space-6); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3);">
+      <a href="travelassistant.html" class="back-link" style="margin-bottom: 0;">← Travel Assistant</a>
+      <a href="../index.html" class="back-link" style="margin-bottom: 0;">← All projects</a>
+    </div>
+  </nav>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <span class="site-footer__name">Denis Pak</span>
+        <div class="site-footer__links">
+          <a href="https://drive.google.com" class="site-footer__link" target="_blank" rel="noopener">Resume</a><!-- EDIT -->
+          <a href="https://t.me/denispak" class="site-footer__link" target="_blank" rel="noopener">Telegram</a><!-- EDIT -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

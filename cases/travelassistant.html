@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Assistant — Denis Pak</title><!-- EDIT -->
+  <meta name="description" content="Case study: Travel Assistant — all-in-one mobile travel app for flights, hotels, and events.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="site-nav">
+    <div class="container">
+      <div class="site-nav__inner">
+        <a href="../index.html" class="site-nav__logo">Denis Pak</a>
+        <nav class="site-nav__links">
+          <a href="../index.html#portfolio" class="site-nav__link">Portfolio</a>
+          <a href="https://drive.google.com" class="site-nav__link" target="_blank" rel="noopener">Resume</a><!-- EDIT -->
+          <a href="https://t.me/denispak" class="site-nav__link site-nav__link--cta" target="_blank" rel="noopener">Contact</a><!-- EDIT -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CASE HEADER ==================== -->
+  <section class="case-header">
+    <div class="container">
+      <a href="../index.html" class="back-link">← All projects</a>
+
+      <div class="case-header__tags">
+        <span class="tag tag--b2c">B2C</span>
+        <span class="tag tag--ecommerce">E-commerce</span>
+      </div>
+
+      <h1 class="case-header__title">Travel Assistant</h1><!-- EDIT -->
+
+      <p class="case-header__description">
+        All-in-one travel app for booking flights, hotels, and events.
+        Launched with strong first-month metrics and a 4.2-star rating.
+      </p><!-- EDIT -->
+
+      <div class="case-header__meta">
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">Product Designer</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Platform</span>
+          <span class="meta-value">iOS · Android</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Segment</span>
+          <span class="meta-value">B2C · Travel</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Year</span>
+          <span class="meta-value">2023</span><!-- EDIT -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HERO IMAGE ==================== -->
+  <div class="container">
+    <!-- REPLACE: delete this div, add <img src="../images/travel-hero.jpg" alt="Travel Assistant app overview" class="case-img"> -->
+    <div class="img-placeholder img-placeholder--hero">
+      <span>Hero / cover image</span>
+    </div>
+  </div>
+
+  <!-- ==================== CASE STUDY BODY ==================== -->
+  <article class="case-layout section">
+    <div class="container">
+      <div class="prose">
+
+        <!-- SECTION 1: OVERVIEW -->
+        <h2>Overview</h2>
+        <p>
+          Travel Assistant is a mobile app that consolidates flight booking, hotel reservations,
+          and event discovery into a single seamless experience. Users can plan and book an
+          entire trip without switching between multiple apps.
+        </p>
+        <p>
+          My responsibility covered the end-to-end UX and UI design: from user research
+          through final handoff — including the smart form auto-fill system and camera-based
+          document scanning for profile setup.
+        </p><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>App overview — key screens</span>
+        </div>
+
+        <!-- SECTION 2: RESEARCH -->
+        <h2>Research & Methodology</h2>
+        <p>
+          I interviewed 12 frequent travellers to understand where existing travel apps
+          create the most friction. The dominant pain point: switching between 3–5 apps
+          to complete a single trip, with repetitive data entry at each step.
+        </p>
+        <p>Two key insights shaped the design direction:</p>
+        <ul>
+          <li>Users want smart defaults — the app should remember their preferences and pre-fill forms</li>
+          <li>Document scanning removes the biggest onboarding barrier (manually entering passport details)</li>
+        </ul><!-- EDIT -->
+
+        <div class="img-row">
+          <div class="img-placeholder img-placeholder--half"><span>User research insights</span></div>
+          <div class="img-placeholder img-placeholder--half"><span>Competitor analysis</span></div>
+        </div>
+
+        <!-- SECTION 3: DESIGN CHALLENGES -->
+        <h2>Design Challenges & Solutions</h2>
+
+        <h3>Challenge 1 — Unified booking flow</h3>
+        <p>
+          Combining flights, hotels, and events in one interface risks creating a cluttered,
+          confusing navigation. I solved this with a clear bottom-tab structure and a unified
+          search layer that adapts its form fields based on the selected travel category.
+        </p><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Booking flow — flight, hotel, event screens</span>
+        </div>
+
+        <h3>Challenge 2 — Smart form auto-fill</h3>
+        <p>
+          Repetitive data entry is the top abandonment trigger in travel booking.
+          I designed a persistent profile layer that pre-fills passenger details, payment info,
+          and preferences across all booking types — reducing form completion time by surfacing
+          only fields that differ from saved defaults.
+        </p><!-- EDIT -->
+
+        <div class="img-row">
+          <div class="img-placeholder img-placeholder--half"><span>Empty form state</span></div>
+          <div class="img-placeholder img-placeholder--half"><span>Auto-filled form state</span></div>
+        </div>
+
+        <h3>Challenge 3 — Camera document scanning</h3>
+        <p>
+          For first-time users, setting up a travel profile requires entering passport and ID data.
+          I designed a camera-based scanning flow using the device camera to extract key fields
+          automatically, with a simple correction step for any mis-reads — reducing onboarding
+          drop-off significantly.
+        </p><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Document scanning onboarding flow</span>
+        </div>
+
+        <!-- SECTION 4: RESULTS -->
+        <h2>Key Results (First Month)</h2>
+        <p>
+          Measured over the first 30 days post-launch on iOS and Android.
+        </p><!-- EDIT -->
+
+        <div class="metrics-grid">
+          <div class="metric metric--large">
+            <span class="metric__value">1 000+</span>
+            <span class="metric__label">Downloads</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">5 min</span>
+            <span class="metric__label">Avg. session duration</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">60%</span>
+            <span class="metric__label">Conversion (first 2 weeks)</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">890+</span>
+            <span class="metric__label">New registrations (MAU)</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">~230</span>
+            <span class="metric__label">Daily Active Users</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">76%</span>
+            <span class="metric__label">Interface clarity rating</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">4.2★</span>
+            <span class="metric__label">App store rating</span>
+          </div>
+        </div><!-- EDIT: update metric values -->
+
+        <!-- SECTION 5: DELIVERABLES -->
+        <h2>Design Deliverables</h2>
+        <ul>
+          <li>UI kit foundation — components, tokens, and icon set</li>
+          <li>User journey mockups across all booking categories</li>
+          <li>Comprehensive booking flows: flights, hotels, events</li>
+          <li>Smart form auto-fill pattern and profile system</li>
+          <li>Camera document scanning onboarding flow</li>
+          <li>Annotated handoff specs for iOS and Android</li>
+        </ul><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Final screens — complete UI kit overview</span>
+        </div>
+
+      </div><!-- /prose -->
+    </div>
+  </article>
+
+  <!-- ==================== CASE NAV ==================== -->
+  <nav style="border-top: 1px solid var(--color-border);">
+    <div class="container" style="padding-block: var(--space-6); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3);">
+      <a href="tsumstat.html" class="back-link" style="margin-bottom: 0;">← ЦУМ STAT</a>
+      <a href="sample.html" class="back-link" style="margin-bottom: 0;">Next: Sample Merch →</a><!-- EDIT -->
+    </div>
+  </nav>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <span class="site-footer__name">Denis Pak</span>
+        <div class="site-footer__links">
+          <a href="https://drive.google.com" class="site-footer__link" target="_blank" rel="noopener">Resume</a><!-- EDIT -->
+          <a href="https://t.me/denispak" class="site-footer__link" target="_blank" rel="noopener">Telegram</a><!-- EDIT -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

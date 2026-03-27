@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЦУМ STAT — Denis Pak</title><!-- EDIT: page title -->
+  <meta name="description" content="Case study: ЦУМ STAT — mobile analytics dashboard for boutique managers.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="site-nav">
+    <div class="container">
+      <div class="site-nav__inner">
+        <a href="../index.html" class="site-nav__logo">Denis Pak</a>
+        <nav class="site-nav__links">
+          <a href="../index.html#portfolio" class="site-nav__link">Portfolio</a>
+          <a href="https://drive.google.com" class="site-nav__link" target="_blank" rel="noopener">Resume</a><!-- EDIT -->
+          <a href="https://t.me/denispak" class="site-nav__link site-nav__link--cta" target="_blank" rel="noopener">Contact</a><!-- EDIT -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CASE HEADER ==================== -->
+  <section class="case-header">
+    <div class="container">
+      <a href="../index.html" class="back-link">← All projects</a>
+
+      <div class="case-header__tags">
+        <span class="tag tag--b2b">B2B</span>
+        <span class="tag tag--analytics">Analytics</span>
+      </div>
+
+      <h1 class="case-header__title">ЦУМ STAT</h1><!-- EDIT -->
+
+      <p class="case-header__description">
+        Mobile analytics dashboard for boutique managers at ЦУМ.
+        Bringing complex sales data to phone in a clear, scannable format.
+      </p><!-- EDIT -->
+
+      <div class="case-header__meta">
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">Product Designer</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Platform</span>
+          <span class="meta-value">Mobile App</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Segment</span>
+          <span class="meta-value">B2B · Retail Analytics</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Year</span>
+          <span class="meta-value">2023</span><!-- EDIT -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HERO IMAGE ==================== -->
+  <div class="container">
+    <!-- REPLACE: delete this div, add <img src="../images/tsumstat-hero.jpg" alt="ЦУМ STAT dashboard overview" class="case-img"> -->
+    <div class="img-placeholder img-placeholder--hero">
+      <span>Hero / cover image</span>
+    </div>
+  </div>
+
+  <!-- ==================== CASE STUDY BODY ==================== -->
+  <article class="case-layout section">
+    <div class="container">
+      <div class="prose">
+
+        <!-- SECTION 1: OVERVIEW -->
+        <h2>Overview</h2>
+        <p>
+          Boutique managers at ЦУМ needed to monitor sales, revenue, and staff performance
+          on the go. The existing reporting tools were desktop-only and required manual exports —
+          making daily decision-making slow and fragmented.
+        </p>
+        <p>
+          The core challenge: display large volumes of analytics data on a phone screen
+          without overwhelming the user, while keeping key metrics immediately visible.
+        </p><!-- EDIT -->
+
+        <!-- REPLACE: existing state / context image -->
+        <div class="img-placeholder img-placeholder--full">
+          <span>Context / problem screens</span>
+        </div>
+
+        <!-- SECTION 2: RESEARCH -->
+        <h2>Research & Methodology</h2>
+        <p>
+          I conducted structured interviews with 6 boutique managers to map out their daily
+          reporting workflows and identify the most critical data points they needed at a glance.
+        </p>
+        <p>Key needs identified:</p>
+        <ul>
+          <li>Sales dynamics and revenue by category — checked every morning</li>
+          <li>Renters report with brand-level and seasonal performance</li>
+          <li>Mark-up reports showing margin analysis by brand and category</li>
+          <li>CRM section: seller effectiveness and customer behaviour metrics</li>
+        </ul><!-- EDIT -->
+
+        <div class="img-row">
+          <!-- REPLACE with real images -->
+          <div class="img-placeholder img-placeholder--half"><span>Manager workflow map</span></div>
+          <div class="img-placeholder img-placeholder--half"><span>Data hierarchy analysis</span></div>
+        </div>
+
+        <!-- SECTION 3: DESIGN CHALLENGES -->
+        <h2>Design Challenges & Solutions</h2>
+
+        <h3>Challenge 1 — Data density on mobile</h3>
+        <p>
+          Analytics dashboards are typically built for wide desktop screens.
+          I solved this by grouping related metrics into categorical blocks, using
+          simplified tables with highlighted key values, and designing growth and
+          deviation indicators that communicate trend direction instantly.
+        </p><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Main statistics screen</span>
+        </div>
+
+        <h3>Challenge 2 — Renters & Mark-Up reports</h3>
+        <p>
+          Managers needed to compare performance across multiple brands and time periods.
+          I designed a tabbed report layout with filterable brand cards and a clear
+          seasonal comparison view that fits comfortably within a single scroll.
+        </p><!-- EDIT -->
+
+        <div class="img-row">
+          <div class="img-placeholder img-placeholder--half"><span>Renters report</span></div>
+          <div class="img-placeholder img-placeholder--half"><span>Mark-up report</span></div>
+        </div>
+
+        <h3>Challenge 3 — CRM Section</h3>
+        <p>
+          The CRM view needed to show seller effectiveness and customer behaviour
+          without feeling like a spreadsheet. I used ranked lists with inline progress
+          indicators and colour-coded performance tiers to make comparisons immediate.
+        </p><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>CRM section screens</span>
+        </div>
+
+        <!-- SECTION 4: RESULTS -->
+        <h2>Key Results</h2>
+        <p>
+          The dashboard received positive feedback from all stakeholder groups during
+          internal testing and was approved for production rollout.
+        </p><!-- EDIT -->
+
+        <div class="metrics-grid">
+          <div class="metric metric--large">
+            <span class="metric__value">4</span>
+            <span class="metric__label">Report modules delivered</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">6</span>
+            <span class="metric__label">Managers interviewed</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">✓</span>
+            <span class="metric__label">Stakeholder approved</span>
+          </div>
+        </div><!-- EDIT: update with real metrics -->
+
+        <!-- SECTION 5: DELIVERABLES -->
+        <h2>Design Deliverables</h2>
+        <ul>
+          <li>Main statistics screen with sales dynamics and revenue by category</li>
+          <li>Renters report with brand-level metrics and seasonal comparison</li>
+          <li>Mark-up reports with margin analysis</li>
+          <li>CRM section with seller performance and customer behaviour views</li>
+          <li>Mobile-optimised typography and data visualisation guidelines</li>
+        </ul><!-- EDIT -->
+
+        <div class="img-placeholder img-placeholder--full">
+          <span>Full screen overview — all modules</span>
+        </div>
+
+      </div><!-- /prose -->
+    </div>
+  </article>
+
+  <!-- ==================== CASE NAV ==================== -->
+  <nav style="border-top: 1px solid var(--color-border);">
+    <div class="container" style="padding-block: var(--space-6); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3);">
+      <a href="mvpplatinum.html" class="back-link" style="margin-bottom: 0;">← VIP-Platinum</a>
+      <a href="travelassistant.html" class="back-link" style="margin-bottom: 0;">Next: Travel Assistant →</a><!-- EDIT -->
+    </div>
+  </nav>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <span class="site-footer__name">Denis Pak</span>
+        <div class="site-footer__links">
+          <a href="https://drive.google.com" class="site-footer__link" target="_blank" rel="noopener">Resume</a><!-- EDIT -->
+          <a href="https://t.me/denispak" class="site-footer__link" target="_blank" rel="noopener">Telegram</a><!-- EDIT -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

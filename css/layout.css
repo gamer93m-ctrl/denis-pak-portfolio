@@ -1,0 +1,193 @@
+/* ============================================================
+   LAYOUT — Container, grid, sections, responsive breakpoints
+   ============================================================ */
+
+
+/* ============================================================
+   CONTAINER
+   Centers content and applies horizontal padding.
+   ============================================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--page-padding);
+}
+
+
+/* ============================================================
+   SECTION SPACING
+   Consistent vertical rhythm between page sections.
+   ============================================================ */
+
+.section {
+  padding-block: var(--space-12);
+}
+
+.section--sm {
+  padding-block: var(--space-6);
+}
+
+.section--lg {
+  padding-block: var(--space-16);
+}
+
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+
+.hero {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-10);
+}
+
+
+/* ============================================================
+   PROJECT GRID — 2×2 on desktop, 1 column on mobile
+   ============================================================ */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+
+/* ============================================================
+   CASE STUDY LAYOUT
+   ============================================================ */
+
+.case-layout {
+  padding-top: 0;
+}
+
+.case-layout .container {
+  max-width: calc(var(--max-width-text) + var(--page-padding) * 2);
+}
+
+/* Override for full-width elements inside narrow prose column */
+.case-layout .img-placeholder--full,
+.case-layout .img-row,
+.case-layout .metrics-grid {
+  width: 100%;
+}
+
+
+/* ============================================================
+   DIVIDER
+   ============================================================ */
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin-block: var(--space-8);
+}
+
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* --- TABLET: 640px and above --- */
+@media (min-width: 640px) {
+  .container {
+    padding-inline: var(--page-padding-lg);
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+
+  .hero__name {
+    font-size: var(--text-5xl);
+  }
+}
+
+/* --- DESKTOP: 1024px and above --- */
+@media (min-width: 1024px) {
+  .hero {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-12);
+  }
+
+  .hero__name {
+    font-size: var(--text-5xl);
+  }
+
+  .hero__tagline {
+    font-size: var(--text-xl);
+  }
+
+  .case-header__title {
+    font-size: var(--text-4xl);
+  }
+
+  .project-grid {
+    gap: var(--space-6);
+  }
+}
+
+/* --- MOBILE: max 639px --- */
+@media (max-width: 639px) {
+  .hero__name {
+    font-size: var(--text-3xl);
+  }
+
+  .hero__tagline {
+    font-size: var(--text-base);
+  }
+
+  .case-header__title {
+    font-size: var(--text-2xl);
+  }
+
+  .case-header__description {
+    font-size: var(--text-base);
+  }
+
+  .section-title {
+    font-size: var(--text-xl);
+  }
+
+  .section {
+    padding-block: var(--space-8);
+  }
+
+  .hero {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+  }
+
+  .case-header__meta {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .img-row {
+    flex-direction: column;
+  }
+
+  .site-nav__links {
+    gap: var(--space-3);
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prose h2 {
+    font-size: var(--text-xl);
+  }
+
+  .metric--large .metric__value {
+    font-size: var(--text-2xl);
+  }
+}

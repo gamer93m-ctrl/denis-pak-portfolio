@@ -1,0 +1,481 @@
+/* ============================================================
+   COMPONENTS — Reusable UI elements
+   All values reference tokens.css. Do not hardcode colors here.
+   ============================================================ */
+
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(249, 248, 246, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.site-nav__logo {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  transition: opacity var(--transition-fast);
+}
+
+.site-nav__logo:hover {
+  opacity: 0.6;
+}
+
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.site-nav__link {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.site-nav__link:hover {
+  color: var(--color-text-primary);
+}
+
+.site-nav__link--cta {
+  padding: 6px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.site-nav__link--cta:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-background);
+  border-color: var(--color-text-primary);
+}
+
+
+/* ============================================================
+   TAGS — Category badges
+   ============================================================ */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1.6;
+}
+
+.tag--b2c {
+  background-color: var(--tag-b2c-bg);
+  color: var(--tag-b2c-text);
+}
+
+.tag--b2b {
+  background-color: var(--tag-b2b-bg);
+  color: var(--tag-b2b-text);
+}
+
+.tag--ecommerce {
+  background-color: var(--tag-ecommerce-bg);
+  color: var(--tag-ecommerce-text);
+}
+
+.tag--analytics {
+  background-color: var(--tag-analytics-bg);
+  color: var(--tag-analytics-text);
+}
+
+
+/* ============================================================
+   PROJECT CARD
+   The entire card is a <a> tag — fully clickable surface.
+   ============================================================ */
+
+.project-card {
+  display: block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  text-decoration: none;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
+}
+
+.project-card__image {
+  width: 100%;
+}
+
+.project-card__body {
+  padding: var(--space-4) var(--space-4) var(--space-5);
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.project-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-1);
+  transition: opacity var(--transition-fast);
+}
+
+.project-card:hover .project-card__title {
+  opacity: 0.75;
+}
+
+.project-card__description {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-normal);
+}
+
+.project-card__metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+
+/* ============================================================
+   METRIC
+   Used both in cards (small) and case study pages (large).
+   ============================================================ */
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metric__value {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.metric__label {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+/* Large variant for case study results section */
+.metric--large {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-align: center;
+  background-color: var(--color-surface);
+}
+
+.metric--large .metric__value {
+  font-size: var(--text-3xl);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.metric--large .metric__label {
+  font-size: var(--text-xs);
+  margin-top: var(--space-1);
+}
+
+
+/* ============================================================
+   IMAGE PLACEHOLDERS
+   Gray dashed boxes showing where images will go.
+
+   TO REPLACE A PLACEHOLDER WITH A REAL IMAGE:
+   1. Put your image file in the images/ folder
+   2. Delete the entire <div class="img-placeholder ..."> block
+   3. Replace it with:
+      <img src="../images/your-file.jpg" alt="Description" class="case-img">
+   ============================================================ */
+
+.img-placeholder {
+  background-color: #EBEBEB;
+  border: 2px dashed #CCCCCC;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  font-family: var(--font-sans);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  user-select: none;
+  width: 100%;
+}
+
+/* Card thumbnail: 16:9 ratio */
+.img-placeholder--card {
+  aspect-ratio: 16 / 9;
+}
+
+/* Hero / cover image at top of case study: wide cinematic ratio */
+.img-placeholder--hero {
+  aspect-ratio: 21 / 9;
+  margin-block: var(--space-4);
+}
+
+/* Full-width image inside case study body */
+.img-placeholder--full {
+  aspect-ratio: 16 / 7;
+  margin-block: var(--space-6);
+}
+
+/* Half-width (used inside .img-row flex container) */
+.img-placeholder--half {
+  aspect-ratio: 4 / 3;
+  flex: 1;
+}
+
+/* Side-by-side container for two half placeholders */
+.img-row {
+  display: flex;
+  gap: var(--space-3);
+  margin-block: var(--space-6);
+}
+
+
+/* ============================================================
+   METRICS GRID — large metric blocks on case study pages
+   ============================================================ */
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-6);
+}
+
+
+/* ============================================================
+   CASE STUDY HEADER
+   ============================================================ */
+
+.case-header {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-6);
+}
+
+.case-header__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.case-header__title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-3);
+  max-width: 760px;
+}
+
+.case-header__description {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+  max-width: var(--max-width-text);
+  margin-bottom: var(--space-5);
+}
+
+.case-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.meta-value {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+
+/* ============================================================
+   BACK LINK
+   ============================================================ */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
+  transition: color var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--color-text-primary);
+}
+
+
+/* ============================================================
+   SECTION LABEL — Eyebrow text above headings
+   ============================================================ */
+
+.section-label {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero__name {
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-4);
+}
+
+.hero__tagline {
+  font-size: var(--text-xl);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+  max-width: 600px;
+  margin-bottom: var(--space-5);
+}
+
+.hero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.hero__chip {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 5px 14px;
+  background-color: var(--color-surface);
+}
+
+
+/* ============================================================
+   SECTION TITLE
+   ============================================================ */
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: var(--space-6);
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-6);
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.site-footer__name {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.site-footer__links {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.site-footer__link {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.site-footer__link:hover {
+  color: var(--color-text-primary);
+}

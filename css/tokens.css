@@ -1,0 +1,101 @@
+/* ============================================================
+   DENIS PAK PORTFOLIO — DESIGN TOKENS
+   ============================================================
+   This is the ONLY file you need to edit to restyle the site.
+   Change colors, fonts, and spacing here — it updates everywhere.
+   ============================================================ */
+
+:root {
+
+  /* --- COLORS ---
+     Background:  page background
+     Surface:     card backgrounds
+     Border:      lines and dividers
+     Text*:       text hierarchy (primary = headings, secondary = body, muted = captions)
+     Accent:      hover states
+  */
+  --color-background:     #F9F8F6;   /* warm off-white */
+  --color-surface:        #FFFFFF;   /* card background */
+  --color-border:         #E8E6E1;   /* subtle dividers */
+  --color-text-primary:   #0F0F0F;   /* headings, name, card titles */
+  --color-text-secondary: #3D3D3D;   /* body paragraphs, descriptions */
+  --color-text-muted:     #8A8780;   /* tags, captions, metadata */
+  --color-accent:         #1A1A1A;   /* hover underlines, active states */
+
+  /* --- TAG COLORS ---
+     Each category tag has a background and a text color.
+     Change these to restyle the badge colors.
+  */
+  --tag-b2c-bg:           #EEF2FF;
+  --tag-b2c-text:         #3730A3;
+  --tag-b2b-bg:           #F0FDF4;
+  --tag-b2b-text:         #15803D;
+  --tag-ecommerce-bg:     #FFF7ED;
+  --tag-ecommerce-text:   #C2410C;
+  --tag-analytics-bg:     #F0F9FF;
+  --tag-analytics-text:   #0369A1;
+
+  /* --- TYPOGRAPHY ---
+     To change the font:
+     1. Go to https://fonts.google.com and pick a font
+     2. Add a <link> in the <head> of each HTML file (see existing link for Inter)
+     3. Replace 'Inter' below with your font name
+  */
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* --- TYPE SCALE ---
+     Based on a consistent ratio. Edit sizes here to adjust all text globally.
+  */
+  --text-xs:   0.75rem;    /*  12px  captions, metric labels */
+  --text-sm:   0.875rem;   /*  14px  nav links, tags, metadata */
+  --text-base: 1rem;       /*  16px  body copy */
+  --text-lg:   1.125rem;   /*  18px  card titles, subheadings */
+  --text-xl:   1.25rem;    /*  20px  section labels */
+  --text-2xl:  1.5rem;     /*  24px  case study h2 headings */
+  --text-3xl:  1.875rem;   /*  30px  page section titles */
+  --text-4xl:  2.5rem;     /*  40px  hero tagline (desktop) */
+  --text-5xl:  3.5rem;     /*  56px  hero name (desktop) */
+
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+
+  --line-height-tight:   1.2;    /* headings */
+  --line-height-normal:  1.6;    /* body copy */
+  --line-height-relaxed: 1.75;   /* case study prose */
+
+  --letter-spacing-tight: -0.02em;  /* display headings */
+  --letter-spacing-wide:   0.06em;  /* all-caps labels */
+
+  /* --- SPACING (8px grid) ---
+     --space-1 = 8px, --space-2 = 16px, --space-3 = 24px, etc.
+  */
+  --space-1:  0.5rem;    /*  8px */
+  --space-2:  1rem;      /* 16px */
+  --space-3:  1.5rem;    /* 24px */
+  --space-4:  2rem;      /* 32px */
+  --space-5:  2.5rem;    /* 40px */
+  --space-6:  3rem;      /* 48px */
+  --space-8:  4rem;      /* 64px */
+  --space-10: 5rem;      /* 80px */
+  --space-12: 6rem;      /* 96px */
+  --space-16: 8rem;      /* 128px */
+
+  /* --- LAYOUT ---*/
+  --max-width:       1120px;   /* main content column max width */
+  --max-width-text:   720px;   /* prose column (case study body text) */
+  --page-padding:     1.5rem;  /* horizontal padding on mobile */
+  --page-padding-lg:  2.5rem;  /* horizontal padding on desktop */
+
+  /* --- BORDERS & RADII ---*/
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* --- TRANSITIONS ---*/
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow:   400ms ease;
+}

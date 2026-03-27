@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+  ==========================================
+  CASE STUDY PAGE — HOW TO EDIT
+  ==========================================
+  - Change project title, description, tags, meta below
+  - Update section text inside <div class="prose">
+  - Replace image placeholders with real images (see comments)
+  - Update metrics numbers in the .metrics-grid section
+  - CSS path prefix is ../css/ (one level up from cases/)
+  ==========================================
+-->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP-Platinum — Denis Pak</title><!-- EDIT: page title -->
+  <meta name="description" content="Case study: VIP-Platinum loyalty program redesign for a luxury boutique.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <!-- NAV NOTE: if you update nav links, also update index.html and all other cases/ files -->
+  <header class="site-nav">
+    <div class="container">
+      <div class="site-nav__inner">
+        <a href="../index.html" class="site-nav__logo">Denis Pak</a>
+        <nav class="site-nav__links">
+          <a href="../index.html#portfolio" class="site-nav__link">Portfolio</a>
+          <a href="https://drive.google.com" class="site-nav__link" target="_blank" rel="noopener">Resume</a><!-- EDIT: resume link -->
+          <a href="https://t.me/denispak" class="site-nav__link site-nav__link--cta" target="_blank" rel="noopener">Contact</a><!-- EDIT: telegram -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CASE HEADER ==================== -->
+  <section class="case-header">
+    <div class="container">
+      <a href="../index.html" class="back-link">← All projects</a>
+
+      <div class="case-header__tags">
+        <span class="tag tag--b2c">B2C</span><!-- EDIT: tags -->
+        <span class="tag tag--ecommerce">E-commerce</span>
+      </div>
+
+      <h1 class="case-header__title">VIP-Platinum</h1><!-- EDIT: project title -->
+
+      <p class="case-header__description">
+        Redesign of the loyalty program and checkout flow for a luxury boutique.
+        Improved conversion, reduced bounce, and launched a chat-to-purchase feature.
+      </p><!-- EDIT: short project description -->
+
+      <div class="case-header__meta">
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">Product Designer</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Platform</span>
+          <span class="meta-value">Mobile App</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Segment</span>
+          <span class="meta-value">B2C · Luxury Retail</span><!-- EDIT -->
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Year</span>
+          <span class="meta-value">2023</span><!-- EDIT -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HERO IMAGE ==================== -->
+  <div class="container">
+    <!-- REPLACE: delete this div, add <img src="../images/vip-platinum-hero.jpg" alt="VIP-Platinum overview" class="case-img"> -->
+    <div class="img-placeholder img-placeholder--hero">
+      <span>Hero / cover image</span>
+    </div>
+  </div>
+
+  <!-- ==================== CASE STUDY BODY ==================== -->
+  <article class="case-layout section">
+    <div class="container">
+      <div class="prose">
+
+        <!-- SECTION 1: OVERVIEW -->
+        <h2>Overview</h2>
+        <p>
+          VIP-Platinum is a loyalty program for VIP clients of a luxury boutique (ЦУМ).
+          The existing mobile app had poor conversion on product pages and no direct communication channel
+          between clients and personal stylists.
+        </p>
+        <p>
+          My goal was to redesign the product discovery and checkout experience, add alternative
+          product matching, and introduce an in-app chat with consultants.
+        </p><!-- EDIT: replace with your project overview -->
+
+        <!-- REPLACE: context / before-state image -->
+        <div class="img-placeholder img-placeholder--full">
+          <span>Before state / context screens</span>
+        </div>
+
+        <!-- SECTION 2: RESEARCH -->
+        <h2>Research & Methodology</h2>
+        <p>
+          I used the Jobs-to-be-Done framework to conduct customer interviews with VIP clients.
+          The core insight: users didn't come to browse — they came to solve a specific style need,
+          and they wanted expert guidance, not an overwhelming product catalogue.
+        </p>
+        <p>
+          Key findings from 8 in-depth interviews:
+        </p>
+        <ul>
+          <li>Users abandoned product pages when nothing matched their initial search</li>
+          <li>They expected a "personal shopper" experience, not a generic e-commerce flow</li>
+          <li>High willingness to chat with a consultant before making a luxury purchase</li>
+        </ul><!-- EDIT: your research findings -->
+
+        <!-- Side-by-side: user journey / insights -->
+        <div class="img-row">
+          <!-- REPLACE with: <img src="../images/vip-research-1.jpg" alt="User journey" class="case-img case-img--half"> -->
+          <div class="img-placeholder img-placeholder--half"><span>User journey map</span></div>
+          <!-- REPLACE with: <img src="../images/vip-research-2.jpg" alt="Key insights" class="case-img case-img--half"> -->
+          <div class="img-placeholder img-placeholder--half"><span>Key insights</span></div>
+        </div>
+
+        <!-- SECTION 3: DESIGN CHALLENGES -->
+        <h2>Design Challenges & Solutions</h2>
+
+        <h3>Challenge 1 — Alternative product matching</h3>
+        <p>
+          When a product is out of stock or doesn't match, users need a path forward.
+          I designed a swipe-based alternative matching interface that shows curated similar items
+          from the same brand tier — keeping users in the purchase flow instead of dropping off.
+        </p><!-- EDIT -->
+
+        <!-- REPLACE: solution screens -->
+        <div class="img-placeholder img-placeholder--full">
+          <span>Alternative matching UI screens</span>
+        </div>
+
+        <h3>Challenge 2 — In-app chat with consultant</h3>
+        <p>
+          Users wanted expert advice before committing to a luxury purchase.
+          I designed a product-aware chat interface where the consultant can see exactly
+          what the client is looking at and push curated alternatives directly into the conversation.
+        </p><!-- EDIT -->
+
+        <!-- Side-by-side: before / after or two different screens -->
+        <div class="img-row">
+          <div class="img-placeholder img-placeholder--half"><span>Chat UI — client view</span></div>
+          <div class="img-placeholder img-placeholder--half"><span>Chat UI — consultant view</span></div>
+        </div>
+
+        <h3>Challenge 3 — Curated collections</h3>
+        <p>
+          Personal stylists needed a way to create and share curated collections with their clients.
+          I designed a collection builder inside the consultant CMS and a clean, editorial presentation
+          layer on the client side.
+        </p><!-- EDIT -->
+
+        <!-- REPLACE: collections screens -->
+        <div class="img-placeholder img-placeholder--full">
+          <span>Curated collections UI</span>
+        </div>
+
+        <!-- SECTION 4: RESULTS -->
+        <h2>Key Results</h2>
+        <p>
+          Measured over 3 months post-launch against the previous app version.
+        </p><!-- EDIT -->
+
+        <div class="metrics-grid">
+          <div class="metric metric--large">
+            <span class="metric__value">+37%</span>
+            <span class="metric__label">Conversion Rate</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">−22%</span>
+            <span class="metric__label">Product Page Bounce</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">+15%</span>
+            <span class="metric__label">Average Order Value</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">70%</span>
+            <span class="metric__label">Chat→Checkout Rate</span>
+          </div>
+        </div><!-- EDIT: update metric values -->
+
+        <!-- SECTION 5: DELIVERABLES -->
+        <h2>Design Deliverables</h2>
+        <ul>
+          <li>Full UI kit for the VIP client app</li>
+          <li>Product-aware chat interface (client + consultant views)</li>
+          <li>Alternative product matching component</li>
+          <li>Stylist collection builder and client collection view</li>
+          <li>Annotated handoff specs for development</li>
+        </ul><!-- EDIT: your deliverables -->
+
+        <!-- REPLACE: final screens / Figma export -->
+        <div class="img-placeholder img-placeholder--full">
+          <span>Final screens overview</span>
+        </div>
+
+      </div><!-- /prose -->
+    </div>
+  </article>
+
+  <!-- ==================== CASE NAV ==================== -->
+  <nav class="section--sm" style="border-top: 1px solid var(--color-border);">
+    <div class="container" style="padding-block: var(--space-6); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3);">
+      <a href="../index.html" class="back-link" style="margin-bottom: 0;">← All projects</a>
+      <a href="tsumstat.html" class="back-link" style="margin-bottom: 0;">Next: ЦУМ STAT →</a><!-- EDIT: next project link -->
+    </div>
+  </nav>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <span class="site-footer__name">Denis Pak</span><!-- EDIT -->
+        <div class="site-footer__links">
+          <a href="https://drive.google.com" class="site-footer__link" target="_blank" rel="noopener">Resume</a><!-- EDIT -->
+          <a href="https://t.me/denispak" class="site-footer__link" target="_blank" rel="noopener">Telegram</a><!-- EDIT -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
