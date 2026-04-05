@@ -1,0 +1,25 @@
+{
+  "name": "denisparkportf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serve -p 3000",
+    "start": "serve -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamer93m-ctrl/denis-pak-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gamer93m-ctrl/denis-pak-portfolio/issues"
+  },
+  "homepage": "https://github.com/gamer93m-ctrl/denis-pak-portfolio#readme",
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
