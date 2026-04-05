@@ -9,24 +9,26 @@
 
 .site-nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: calc(100% - 48px);
+  max-width: 720px;
+  background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(40px) saturate(180%);
   -webkit-backdrop-filter: blur(40px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
 }
 
 .site-nav__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
-  max-width: var(--max-width);
-  margin-inline: auto;
-  padding-inline: var(--page-padding-lg);
+  height: 52px;
+  padding-inline: 8px 8px;
+  padding-left: 24px;
 }
 
 .site-nav__logo {
@@ -67,7 +69,8 @@
   background-color: var(--color-text);
   color: var(--color-bg) !important;
   font-weight: var(--font-weight-semibold);
-  padding: 8px 24px;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
 }
 
 .site-nav__link--cta:hover {
@@ -434,7 +437,7 @@
 
 .hero__video {
   width: 100%;
-  max-width: 520px;
+  max-width: 460px;
   height: auto;
 }
 

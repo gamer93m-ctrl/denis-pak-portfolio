@@ -93,8 +93,19 @@
     flex-direction: column;
   }
 
+  .site-nav {
+    width: calc(100% - 24px);
+    top: 10px;
+  }
+
   .site-nav__inner {
-    padding-inline: var(--page-padding);
+    padding-left: 16px;
+    padding-right: 6px;
+    height: 46px;
+  }
+
+  .site-nav__link:not(.site-nav__link--cta) {
+    display: none;
   }
 
   .site-footer__inner {
