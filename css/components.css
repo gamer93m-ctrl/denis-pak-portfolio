@@ -261,6 +261,22 @@
   align-items: center;
 }
 
+.project__img {
+  width: 240px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+}
+
+.project__img--wide {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+}
+
 
 /* ============================================================
    IMAGE PLACEHOLDERS — glass cards with shimmer
