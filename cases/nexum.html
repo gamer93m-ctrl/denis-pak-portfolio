@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexum — Корзина и оплата · Denis Pak</title>
+  <meta name="description" content="Кейс: переработка воронки оплаты в white-label биллинговой платформе. От корзины до подтверждения чека.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="site-nav__inner">
+      <a href="../index.html" class="site-nav__logo">Denis Pak</a>
+      <nav class="site-nav__links">
+        <a href="../index.html#work" class="site-nav__link">Проекты</a>
+        <a href="https://drive.google.com" class="site-nav__link" target="_blank" rel="noopener">Резюме</a>
+        <a href="https://t.me/denispak" class="site-nav__link site-nav__link--cta" target="_blank" rel="noopener">Написать</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="case-header">
+    <div class="container">
+      <a href="../index.html" class="back-link">← Все проекты</a>
+
+      <div class="case-header__tags">
+        <span class="tag tag--b2c">B2C</span>
+        <span class="tag tag--ecommerce">Billing</span>
+      </div>
+
+      <h1 class="case-header__title">Nexum&nbsp;— Корзина и&nbsp;оплата</h1>
+
+      <p class="case-header__description">
+        Переработка воронки оплаты в&nbsp;white&#8209;label биллинговой платформе. Одно изменение
+        масштабируется на&nbsp;сотни компаний и&nbsp;тысячи конечных пользователей.
+      </p>
+
+      <div class="case-header__meta">
+        <div class="meta-item">
+          <span class="meta-label">Роль</span>
+          <span class="meta-value">Senior Product Designer</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Зона ответственности</span>
+          <span class="meta-value">Корзина · Чекаут · Оплата</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Сегмент</span>
+          <span class="meta-value">B2B / B2C · Billing</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Год</span>
+          <span class="meta-value">2023–2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <img src="../images/nexum-checkout.webp" alt="Nexum — обложка кейса, экран чекаута" class="project__img--wide" style="width: 100%; max-height: 480px; object-fit: contain; display: block;">
+  </div>
+
+  <article class="case-layout section">
+    <div class="container">
+      <div class="prose">
+
+        <h2>Задача</h2>
+        <p>
+          Переработать весь путь оплаты&nbsp;— от&nbsp;корзины до&nbsp;подтверждения чека. Учесть
+          ограничения white&#8209;label продукта: интерфейс кастомизируют клиенты под&nbsp;свой бренд,
+          бекенд работает на&nbsp;табличных структурах, в&nbsp;систему подключено 20+ платёжных шлюзов.
+        </p>
+
+        <h2>Контекст</h2>
+        <p>
+          Платформа&nbsp;— white&#8209;label решение для&nbsp;автоматизации продаж IT&#8209;услуг
+          и&nbsp;управления подписками. На&nbsp;одном коде работают сотни компаний в&nbsp;десятках
+          стран. Корзина общая для&nbsp;всех&nbsp;— любая ошибка в&nbsp;ней масштабируется
+          на&nbsp;тысячи конечных пользователей.
+        </p>
+
+        <h2>Проблема</h2>
+        <p>
+          Воронка оплаты состояла из&nbsp;7&nbsp;шагов без&nbsp;чёткой логики. Кнопка «Оплатить»
+          уходила в&nbsp;скролл, конфигурация услуги занимала 20+ строк нечитаемого текста,
+          а&nbsp;после оплаты пользователя выбрасывало на&nbsp;дашборд без&nbsp;статуса&nbsp;—
+          купил или&nbsp;нет, непонятно.
+        </p>
+
+        <h2>Исследование</h2>
+        <p>
+          Прошёл весь путь от&nbsp;корзины до&nbsp;чека, зафиксировал точки трения. Провёл
+          глубинные интервью и&nbsp;два этапа коридорных тестирований. Главное ограничение:
+          бекенд трактует корзину как таблицу, а&nbsp;клиенты кастомизируют интерфейс через
+          маркдаун и&nbsp;настройки админки.
+        </p>
+
+        <h2>Ключевой инсайт</h2>
+        <p>
+          <strong>Каждый лишний шаг&nbsp;— точка выхода из&nbsp;воронки.</strong>
+          Пользователь не&nbsp;читает конфигурацию в&nbsp;корзине&nbsp;— он&nbsp;перепроверяет.
+          А&nbsp;экран подтверждения плательщика, который открывался отдельно, просто отделял
+          от&nbsp;главного&nbsp;— перехода к&nbsp;оплате.
+        </p>
+        <ul>
+          <li>Сокращение шагов напрямую снижает отток: меньше экранов&nbsp;— меньше моментов передумать</li>
+          <li>Вторичные данные не&nbsp;должны конкурировать с&nbsp;целевым действием&nbsp;— их&nbsp;можно свернуть</li>
+        </ul>
+
+        <h2>Решение</h2>
+        <p>
+          Переосмыслил архитектуру воронки: 7&nbsp;шагов стали 3. Итоги зафиксированы
+          на&nbsp;экране, конфигурация убрана в&nbsp;раскрывающийся блок, выбор плательщика
+          и&nbsp;подтверждение объединены.
+        </p>
+
+        <h3>Корзина</h3>
+        <p>
+          Итоговая стоимость и&nbsp;кнопка оплаты зафиксированы справа&nbsp;— видны всегда,
+          независимо от&nbsp;количества услуг. Конфигурация услуги переведена в&nbsp;таблицу
+          и&nbsp;спрятана в&nbsp;аккордеон. Добавлены чекбоксы для&nbsp;частичной оплаты
+          с&nbsp;пересчётом суммы.
+        </p>
+
+        <div class="img-row">
+          <div class="project__visuals" style="margin: 0;">
+            <img src="../images/nexum-cart.webp" alt="Nexum — корзина, фиксированный итог справа" class="project__img--wide" style="width: 100%; display: block;">
+          </div>
+          <div class="project__visuals" style="margin: 0;">
+            <img src="../images/nexum-cart-2.webp" alt="Nexum — корзина, состояние с раскрытой конфигурацией" class="project__img--wide" style="width: 100%; display: block;">
+          </div>
+        </div>
+
+        <h3>Чекаут и&nbsp;выбор плательщика</h3>
+        <p>
+          Два экрана&nbsp;— список плательщиков и&nbsp;форма подтверждения&nbsp;— объединены
+          в&nbsp;один. Данные развёрнуты прямо в&nbsp;карточке, добавлен фильтр. Один лишний
+          экран убран&nbsp;— одна точка выхода меньше.
+        </p>
+
+        <div class="container" style="padding: 0;">
+          <img src="../images/nexum-checkout.webp" alt="Nexum — объединённый чекаут с выбором плательщика" class="project__img--wide" style="width: 100%; display: block;">
+        </div>
+
+        <h3>Итерация по&nbsp;фидбеку</h3>
+        <p>
+          Первая версия с&nbsp;карточками методов оплаты не&nbsp;прошла коридорное тестирование&nbsp;—
+          пользователи ожидали список. Собрал фидбек через Customer&nbsp;Feedback, переделал.
+          Итерация заняла один спринт.
+        </p>
+
+        <div class="container" style="padding: 0;">
+          <img src="../images/nexum-pay.webp" alt="Nexum — выбор способа оплаты, итерация после тестов" class="project__img--wide" style="width: 100%; display: block;">
+        </div>
+
+        <h3>Подтверждение оплаты</h3>
+        <p>
+          Раньше после оплаты пользователь попадал на&nbsp;дашборд без&nbsp;объяснений.
+          Спроектировал экран подтверждения: статус платежа, информация об&nbsp;услуге,
+          обработка ошибок. Закрыл системную проблему, которой раньше не&nbsp;было решения.
+        </p>
+
+        <div class="container" style="padding: 0;">
+          <img src="../images/nexum-payment.webp" alt="Nexum — экран подтверждения оплаты" class="project__img--wide" style="width: 100%; display: block;">
+        </div>
+
+        <h2>Результат</h2>
+
+        <div class="metrics-grid">
+          <div class="metric metric--large">
+            <span class="metric__value">7 → 3</span>
+            <span class="metric__label">Шагов в&nbsp;воронке оплаты</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">190+</span>
+            <span class="metric__label">Компаний работают на&nbsp;новой воронке</span>
+          </div>
+          <div class="metric metric--large">
+            <span class="metric__value">−35%</span>
+            <span class="metric__label">Обращений в&nbsp;поддержку по&nbsp;вопросам оплаты</span>
+          </div>
+        </div>
+
+        <ul>
+          <li>White&#8209;label продукт: одно улучшение воронки масштабируется на&nbsp;190+ компаний в&nbsp;100+ странах и&nbsp;тысячи их&nbsp;конечных пользователей. Каждый сокращённый шаг&nbsp;— меньше оттока для&nbsp;всей клиентской базы.</li>
+          <li>Два этапа коридорных исследований&nbsp;— на&nbsp;концепте и&nbsp;на&nbsp;финальном флоу. Первый выявил проблему с&nbsp;карточками метода оплаты, второй подтвердил, что переработанная версия проходит без&nbsp;трения.</li>
+          <li>Задача пришла как «сделай красиво», а&nbsp;превратилась в&nbsp;переработку всей воронки оплаты через исследования, 2&nbsp;раунда тестирования и&nbsp;итерации по&nbsp;фидбеку. Фича вышла в&nbsp;релиз вместе с&nbsp;тремя другими крупными задачами и&nbsp;обновила визуал продукта.</li>
+        </ul>
+
+        <p style="color: var(--color-text-muted); font-size: 0.9em; margin-top: var(--space-6);">
+          Часть деталей продукта закрыта&nbsp;NDA. Если хочется обсудить кейс подробнее&nbsp;—
+          <a href="https://t.me/denispak" target="_blank" rel="noopener">напишите мне</a>.
+        </p>
+
+      </div>
+    </div>
+  </article>
+
+  <nav style="border-top: 1px solid var(--color-border);">
+    <div class="container" style="padding-block: var(--space-6); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3);">
+      <a href="tsumstat.html" class="back-link" style="margin-bottom: 0;">← ЦУМ STAT</a>
+      <a href="sample.html" class="back-link" style="margin-bottom: 0;">Далее: Sample Merch →</a>
+    </div>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <span class="site-footer__name">© Denis Pak 2024</span>
+        <div class="site-footer__links">
+          <a href="https://drive.google.com" class="site-footer__link" target="_blank" rel="noopener">Резюме</a>
+          <a href="https://t.me/denispak" class="site-footer__link" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
